@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- Import Vega 4 & Vega-Lite 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@4.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@2"></script>
+    <!-- Import vega-embed -->
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@3"></script>
+
+  
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="page-header text-center">
+            <div id="vis"></div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+    var spec = "https://gist.githubusercontent.com/lcyraphael/927e2d053eea3be6ddff5a5948137943/raw/375ff129348d1556491a5ed930b3bee14546662b/purposes_breakdown.json"
+    vegaEmbed('#vis', spec).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script>
+
+</body>
+</html>
