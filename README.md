@@ -1,3 +1,3 @@
-# viztest
+# Data viz
 
-Arts/ culture/ heritage/ science charities (by income, spending, lifespan): [https://lcyraphael.github.io/viztest/](https://lcyraphael.github.io/viztest/ "Rendered vega lite")
+Charities analysis (England and Wales): [https://lcyraphael.github.io/viztest/](https://lcyraphael.github.io/viztest/ "Rendered vega lite")
