@@ -2,14 +2,9 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <!-- Import Vega 4 & Vega-Lite 2 -->
-    <script src="https://cdn.jsdelivr.net/npm/vega@4.2"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@2"></script>
-    <!-- Import vega-embed -->
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@3"></script>
 
-  
 </head>
 <body>
     <div class="container-fluid">
@@ -18,7 +13,6 @@
                 <h1>Data viz for charities analysis</h1>
             </header>
 
-            <p>Data scraped from the <a href="http://beta.charitycommission.gov.uk/">Charity Commission for England and Wales</a>, Sept 22, 2018 (<a href="https://dev.azure.com/nestauk/CharitiesAnalysis">source code</a>).</p>
             <h5>View breakdown by </h5>
             <ul class="list-group list-unstyled">
                 <li><a class="list-group-item" href="./charities-analysis/status-breakdown.html">Charity status (up-to-date, removed etc)</a></li>
@@ -32,7 +26,13 @@
         </div>
     </div>
 
-
-
 </body>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Data scraped from the <a href="http://beta.charitycommission.gov.uk/">Charity Commission for England and Wales</a>, Sept 22, 2018 | <a href="https://dev.azure.com/nestauk/CharitiesAnalysis" target="_blank">Source code</a> | Contact: <a href="mailto:raphael.leung@nesta.org.uk">raphael.leung@nesta.org.uk</a></p>
+      </div>
+    </footer>
+
+
 </html>

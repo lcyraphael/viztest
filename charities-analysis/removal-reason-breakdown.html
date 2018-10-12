@@ -20,8 +20,11 @@
     </div>
 
 <script type="text/javascript">
-    var spec = "https://gist.githubusercontent.com/lcyraphael/bfd015207801e84c1b79ec67676e8676/raw/79cafdb7a1966aca9d289d4356f582a9c6a23c56/removal_reason_breakdown.json"
-    vegaEmbed('#vis', spec).then(function(result) {
+    var spec = "https://gist.githubusercontent.com/lcyraphael/bfd015207801e84c1b79ec67676e8676/raw/removal_reason_breakdown.json"
+    var opt = {
+        "actions": {export: {svg: true, png: false}, compiled: false, source: false, editor: false}
+    }
+    vegaEmbed('#vis', spec, opt).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>

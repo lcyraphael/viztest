@@ -20,8 +20,11 @@
     </div>
 
 <script type="text/javascript">
-    var spec = "https://gist.githubusercontent.com/lcyraphael/71e9e737ff96f27bfe9df36f81d85b75/raw/a666375852f17d59ed6343031013cd9623b3479e/income_spending_lifespan.json"
-    vegaEmbed('#vis', spec).then(function(result) {
+    var spec = "https://gist.githubusercontent.com/lcyraphael/71e9e737ff96f27bfe9df36f81d85b75/raw/income_spending_lifespan.json"
+    var opt = {
+        "actions": {export: {svg: true, png: false}, compiled: false, source: false, editor: false}
+    }
+    vegaEmbed('#vis', spec, opt).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
