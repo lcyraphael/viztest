@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- Import Vega 4 & Vega-Lite 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.8"></script>
+    <!-- Import vega-embed -->
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@3"></script>
+
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="page-header text-center">
+            <div id="vis" style="width: 55vw; min-width: 150px; max-width: 300px; height: 30vh; max-height:300px; margin-right: 45vw; padding: 10%"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var spec = "https://gist.githubusercontent.com/lcyraphael/c124bbab34d45a494dbb9bab45deb703/raw/charities_speak_size.json?d=3"
+
+        const opts = {
+            "renderer": "svg",
+            "actions": false
+        }
+
+        vegaEmbed('#vis', spec, opts).then(function (result) {
+        }).catch(console.error);
+    </script>
+
+</body>
+
+</html>
